@@ -5,6 +5,15 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import { GetStaticProps } from 'next'
+import Test2  from '../components/test2'
+
+// export default function Home(){
+//   return (
+//       <Test2>
+
+//       </Test2>
+//     )
+// }
 
 export default function Home({
   allPostsData
@@ -42,6 +51,7 @@ export default function Home({
             </li>
           ))}
         </ul>
+        
       </section>
     </Layout>
   )
