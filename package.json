@@ -1,0 +1,51 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.25.0",
+    "date-fns": "^2.22.1",
+    "gray-matter": "^4.0.3",
+    "next": "^10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1",
+    "tailwindcss": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "@types/react": "^17.0.11",
+    "autoprefixer": "^10.2.6",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "postcss": "^8.3.5",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.3.1",
+    "prisma": "^2.25.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "always",
+    "trailingComma": "all"
+  }
+}
