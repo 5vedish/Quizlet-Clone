@@ -51,7 +51,7 @@ import NavbarContainer from '../components/navbar'
 export default function Home() {
   return (
     <NavbarContainer>
-      <div></div>
+      <div>Hello</div>
     </NavbarContainer>
   )
 }
