@@ -3,12 +3,21 @@ import { Menu } from '@headlessui/react'
 
 export default function NavbarContainer({
   children,
+  bg_enabled,
 }: {
   children: React.ReactNode
+  bg_enabled: boolean
 }) {
   return (
-    <div className="flex flex-col w-screen h-screen justify-start items-center">
-      <nav className="flex flex-row w-screen h-20 bg-indigo-500"></nav>
+    <div
+      className={
+        `"flex flex-col w-screen h-screen justify-start items-center"` +
+        bg_enabled
+          ? 'bg-gradient-to-br from-purple-300 via-pink-200 to-blue-400'
+          : ''
+      }
+    >
+      <nav className="flex flex-row w-screen h-20 bg-indigo-600"></nav>
       {children}
     </div>
   )
