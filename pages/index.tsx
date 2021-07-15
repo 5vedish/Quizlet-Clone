@@ -49,11 +49,7 @@ import NavbarContainer from '../components/navbar'
 // }
 
 export default function Home() {
-  return (
-    <NavbarContainer>
-      <div></div>
-    </NavbarContainer>
-  )
+  return <NavbarContainer></NavbarContainer>
 }
 
 export const getStaticProps: GetStaticProps = async () => {
