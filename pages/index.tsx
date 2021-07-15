@@ -51,7 +51,7 @@ import NavbarContainer from '../components/navbar'
 export default function Home() {
   return (
     <NavbarContainer bg_enabled={true}>
-      <div>Hello</div>
+      <div></div>
     </NavbarContainer>
   )
 }
