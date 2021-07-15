@@ -7,8 +7,8 @@ export default function NavbarContainer({
   children: React.ReactNode
 }) {
   return (
-    <div className="flex w-screen h-screen flex-col items-center justify-items-center bg-gradient-to-br from-purple-300 via-pink-200 to-blue-400">
-      <nav className="flex w-screen h-20 bg-indigo-600"></nav>
+    <div className="flex flex-col w-screen h-screen justify-start items-center bg-gradient-to-br from-purple-300 via-pink-200 to-blue-400">
+      <nav className="flex flex-row w-screen h-20 bg-indigo-600"></nav>
       {children}
     </div>
   )
