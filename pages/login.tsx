@@ -3,7 +3,7 @@ import LogInContainer from "@components/logincontainer";
 
 export default function LogIn() {
     return (
-        <NavbarContainer>
+        <NavbarContainer bg_enabled>
             <LogInContainer></LogInContainer>
         </NavbarContainer>
     )
