@@ -8,8 +8,6 @@ export default function NavbarContainer({
   children: React.ReactNode
   bg_enabled: boolean
 }) {
-  console.log(bg_enabled)
-
   const background = bg_enabled
     ? ' bg-gradient-to-br from-purple-300 via-pink-200 to-blue-400'
     : ''
@@ -18,7 +16,11 @@ export default function NavbarContainer({
     <div
       className={`flex flex-col w-screen h-screen justify-start items-center ${background}`}
     >
-      <nav className="flex flex-row w-screen h-20 bg-indigo-600"></nav>
+      <nav className="flex flex-row w-screen h-20 bg-indigo-600">
+        <div className="flex w-16 h-16 border-4 rounded border-white mt-2 ml-6 justify-center items-center">
+          <p className="text-white font-bold">Testlet</p>
+        </div>
+      </nav>
       {children}
     </div>
   )
