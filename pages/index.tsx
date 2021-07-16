@@ -50,13 +50,13 @@ import NavbarContainer from '../components/navbar'
 export default function Home() {
   return (
     <div>
-      <NavbarContainer bg_enabled={true}>
+      <NavbarContainer bg_enabled logged_in>
         <div className="mx-auto w-screen h-full">
           <div className="flex justify-around flex-row h-full">
             <div className="flex flex-col w-2/5 h-full space-y-6">
               <div className="flex flex-row justify-center">
                 <div className="bg-indigo-600 mt-32 rounded-2xl">
-                  <p className="px-4 py-4 text-white font-bold text-9xl">
+                  <p className="px-4 py-4 text-white font-bold font-trial text-9xl">
                     Testlet
                   </p>
                 </div>
@@ -65,7 +65,7 @@ export default function Home() {
             <div className="flex flex-col justify-start bg-white bg-opacity-50 w-3/5 h-full rounded-l-3xl">
               <div className="flex flex-row mt-32 justify-end">
                 <div className="transform bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 w-11/12 h-16 rounded-l-lg hover:transition duration-500 hover:scale-110 hover:-translate-x-14">
-                  <p className="font-semibold font-trial px-4 py-4 text-lg text-white">
+                  <p className="font-semibold px-4 py-4 text-lg text-white">
                     Create Flashcards for all Occasions!
                   </p>
                 </div>
@@ -73,14 +73,14 @@ export default function Home() {
 
               <div className="flex flex-row mt-14 justify-end">
                 <div className="transform bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 w-11/12 h-16 rounded-l-lg hover:transition duration-500 hover:scale-110 hover:-translate-x-14">
-                  <p className="px-4 py-4 font-semibold font-trial text-lg text-white">
+                  <p className="px-4 py-4 font-semibold text-lg text-white">
                     Upload Text and Images!
                   </p>
                 </div>
               </div>
               <div className="flex flex-row mt-14 justify-end">
                 <button
-                  className="transform bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 w-11/12 h-32 text-white text-4xl font-semibold font-trial rounded-l-lg hover:bg-indigo-600 transition duration-500 hover:scale-110 hover:-translate-x-14"
+                  className="transform bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 w-11/12 h-32 text-white text-4xl font-semibold rounded-l-lg hover:bg-indigo-600 transition duration-500 hover:scale-110 hover:-translate-x-14"
                   onClick={() => alert('Nothing Happened')}
                 >
                   Click Here to Get Started!
