@@ -47,7 +47,7 @@ export default function LogInContainer({
         Password
         <form className="flex mt-1">
           <input
-            className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1"
+            className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1 px-3"
             placeholder="Enter Password"
           ></input>
         </form>
