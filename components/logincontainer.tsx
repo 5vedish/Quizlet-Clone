@@ -34,7 +34,7 @@ export default function LogInContainer({
                 </p>
                 <form className="flex mt-1">
                   <input
-                    className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-auto ml-4 mr-4 focus:outline-none focus:ring focus:border-indigo-200"
+                    className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded-md flex-auto ml-4 mr-4 focus:outline-none focus:ring focus:border-indigo-200"
                     placeholder="Enter Email"
                   ></input>
                 </form>
@@ -55,7 +55,7 @@ export default function LogInContainer({
         Username
         <form className="flex mt-1">
           <input
-            className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1 focus:outline-none focus:ring focus:border-indigo-200"
+            className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded-md flex-1 focus:outline-none focus:ring focus:border-indigo-200"
             placeholder="Enter Username"
           ></input>
         </form>
@@ -64,7 +64,7 @@ export default function LogInContainer({
         Password
         <form className="flex mt-1">
           <input
-            className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1 focus:outline-none focus:ring focus:border-indigo-200"
+            className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded-md flex-1 focus:outline-none focus:ring focus:border-indigo-200"
             placeholder="Enter Password"
           ></input>
         </form>
