@@ -3,7 +3,7 @@ import LogInContainer from '@components/logincontainer'
 
 export default function LogIn() {
   return (
-    <NavbarContainer bg_enabled authing logged_in={false}>
+    <NavbarContainer bg_enabled logged_in>
       <LogInContainer></LogInContainer>
     </NavbarContainer>
   )
