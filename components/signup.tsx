@@ -6,7 +6,7 @@ export default function SignupCard(){
             <label className="mx-6 mt-1 font-semibold">
                 Username
                 <form className="flex mt-1">
-                    <input className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1" placeholder='Enter Username'>
+                    <input className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 focus:outline-none focus:ring focus:border-indigo-200 border-gray h-10 rounded flex-1  px-2" placeholder='Enter Username'>
                     </input>
                 </form>
             </label>
@@ -14,7 +14,7 @@ export default function SignupCard(){
             <label className="mx-6 mt-1 font-semibold">
                 Email
                     <form className="flex mt-1">
-                        <input className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1" placeholder='Enter Email'>
+                        <input className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 focus:outline-none focus:ring focus:border-indigo-200 border-gray h-10 rounded flex-1  px-2" placeholder='Enter Email'>
                         </input>
                     </form>
             </label>
@@ -22,7 +22,7 @@ export default function SignupCard(){
             <label className="mt-1 mx-6 font-semibold">
                     Password
                     <form className="flex mt-1">
-                        <input className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1" placeholder='Enter Password'>
+                        <input className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 focus:outline-none focus:ring focus:border-indigo-200 border-gray h-10 rounded flex-1 px-2" placeholder='Enter Password'>
                         </input>
                     </form>
             </label>
@@ -30,7 +30,7 @@ export default function SignupCard(){
             <label className="mx-6 mt-1 font-semibold">
                 Confirm Password
                     <form className="flex mt-1">
-                        <input className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1" placeholder='Confirm Password'>
+                        <input className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 focus:outline-none focus:ring focus:border-indigo-200 border-gray h-10 rounded flex-1  px-2" placeholder='Confirm Password'>
                         </input>
                     </form>
             </label>
