@@ -18,7 +18,9 @@ export default function LogInContainer() {
           Username
           <form className="flex mt-1">
             <input
-              className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1 focus:outline-none focus:ring focus:border-indigo-200"
+              className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1 
+              focus:outline-none focus:ring focus:border-indigo-200
+              cursor-auto"
               placeholder="Enter Username"
             ></input>
           </form>
@@ -27,7 +29,9 @@ export default function LogInContainer() {
           Password
           <form className="flex mt-1">
             <input
-              className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1 focus:outline-none focus:ring focus:border-indigo-200"
+              className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1 
+              focus:outline-none focus:ring focus:border-indigo-200
+              cursor-auto"
               placeholder="Enter Password"
             ></input>
           </form>
@@ -37,12 +41,13 @@ export default function LogInContainer() {
             className="font-semibold text-align-center w-20 h-10 text-white rounded-lg ml-6
           bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 
           hover:from-purple-400 hover:via-indigo-400 hover:to-blue-300 
-          focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-70"
+          focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-70
+          cursor-pointer"
           >
             Login
           </button>
           <button
-            className="pt-1 -mt-1 font-semibold"
+            className="pt-1 -mt-1 font-semibold cursor-pointer"
             onClick={() => setIsOpen(true)}
           >
             {/* <Link href="/about">Forgot password?</Link> */}
@@ -83,7 +88,9 @@ export default function LogInContainer() {
               <form className="flex mt-1">
                 <input
                   ref={completeButtonRef}
-                  className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-auto ml-4 mr-4 focus:outline-none focus:ring focus:border-indigo-200"
+                  className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-auto ml-4 mr-4 
+                  focus:outline-none focus:ring focus:border-indigo-200
+                  cursor-auto"
                   placeholder="Enter Email"
                 ></input>
               </form>
@@ -92,7 +99,8 @@ export default function LogInContainer() {
                 className="font-semibold text-align-center w-20 h-10 text-white 
                     rounded-lg bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 
                     hover:from-purple-400 hover:via-indigo-400 hover:to-blue-300 mt-4 ml-4 mb-4
-                    focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
+                    focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-70
+                    cursor-pointer"
               >
                 Send
               </button>
