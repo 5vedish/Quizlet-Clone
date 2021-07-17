@@ -1,14 +1,7 @@
-import Link from 'next/link'
-import NavbarContainer from './navbar'
-// import PasswordRetrevial from './password_retrieval'
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
-export default function LogInContainer({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function LoginCard() {
   let [isOpen, setIsOpen] = useState(false)
   return (
     <div className="flex flex-col text-blue-500 bg-white bg-opacity-30 w-80 h-68 m-auto border-black border border-opacity-20 rounded-xl font-semibold">
