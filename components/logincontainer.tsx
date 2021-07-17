@@ -3,6 +3,7 @@ import NavbarContainer from './navbar'
 // import PasswordRetrevial from './password_retrieval'
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import { useRef } from 'react'
 
 export default function LogInContainer({
   children,
@@ -10,15 +11,19 @@ export default function LogInContainer({
   children: React.ReactNode
 }) {
   let [isOpen, setIsOpen] = useState(false)
+  let completeButtonRef = useRef(null)
   return (
     <div className="flex flex-col text-blue-500 bg-white bg-opacity-30 w-80 h-68 m-auto border-black border border-opacity-20 rounded-xl font-semibold">
       <Transition show={isOpen} as={Fragment}>
-        <Dialog onClose={() => setIsOpen(false)}>
+        <Dialog
+          initialFocus={completeButtonRef}
+          onClose={() => setIsOpen(false)}
+        >
           <Transition.Child
             as={Fragment}
-            enter="transform ease-out duration-200 origin-top"
-            enterFrom="opacity-0 scale-0"
-            enterTo="opacity-100 scale-300"
+            enter="transform ease-out duration-200 origin-center"
+            enterFrom="opacity-0 scale-90"
+            enterTo="opacity-100 scale-100"
             leave="transform ease-in duration-100 -translate-y-96 origin-bottom"
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-0"
@@ -34,15 +39,17 @@ export default function LogInContainer({
                 </p>
                 <form className="flex mt-1">
                   <input
-                    className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded-md flex-auto ml-4 mr-4 focus:outline-none focus:ring focus:border-indigo-200"
+                    className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-auto ml-4 mr-4 focus:outline-none focus:ring focus:border-indigo-200"
                     placeholder="Enter Email"
                   ></input>
                 </form>
                 <button
+                  ref={completeButtonRef}
                   onClick={() => setIsOpen(false)}
                   className="font-semibold text-align-center w-20 h-10 text-white 
                     rounded-lg bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 
-                    hover:from-purple-400 hover:via-indigo-400 hover:to-blue-300 mt-2 ml-4 mb-4"
+                    hover:from-purple-400 hover:via-indigo-400 hover:to-blue-300 mt-2 ml-4 mb-4
+                    focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
                 >
                   Send
                 </button>
@@ -55,7 +62,7 @@ export default function LogInContainer({
         Username
         <form className="flex mt-1">
           <input
-            className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded-md flex-1 focus:outline-none focus:ring focus:border-indigo-200"
+            className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1 focus:outline-none focus:ring focus:border-indigo-200"
             placeholder="Enter Username"
           ></input>
         </form>
@@ -64,13 +71,18 @@ export default function LogInContainer({
         Password
         <form className="flex mt-1">
           <input
-            className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded-md flex-1 focus:outline-none focus:ring focus:border-indigo-200"
+            className="px-3 bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 rounded flex-1 focus:outline-none focus:ring focus:border-indigo-200"
             placeholder="Enter Password"
           ></input>
         </form>
       </label>
       <div className="flex flex-row justify-between align-center mt-6 pr-7 mb-5">
-        <button className="ml-6 font-semibold text-align-center w-20 h-10 text-white rounded-lg bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 hover:from-purple-400 hover:via-indigo-400 hover:to-blue-300">
+        <button
+          className="ml-6 font-semibold text-align-center w-20 h-10 text-white rounded-lg 
+          bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 
+          hover:from-purple-400 hover:via-indigo-400 hover:to-blue-300 
+          focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-70"
+        >
           Login
         </button>
         <button
