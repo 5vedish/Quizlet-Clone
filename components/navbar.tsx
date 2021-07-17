@@ -22,7 +22,7 @@ export default function NavbarContainer({
     >
       <nav className="flex flex-row w-screen h-20 bg-indigo-600 justify-between">
         <div className="flex w-16 h-16 border-4 rounded border-white mt-2 ml-6 justify-center items-center">
-          <p className="text-white font-bold font-trial select-none">Testlet</p>
+          <p className="text-white font-bold font-trial">Testlet</p>
         </div>
 
         {!logged_in || authing ? (

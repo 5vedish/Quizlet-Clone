@@ -1,9 +1,4 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
 import { GetStaticProps } from 'next'
 import NavbarContainer from '../components/navbar'
 
@@ -50,7 +45,7 @@ import NavbarContainer from '../components/navbar'
 export default function Home() {
   return (
     <div>
-      <NavbarContainer bg_enabled logged_in>
+      <NavbarContainer bg_enabled logged_in={false} authing={false}>
         <div className="mx-auto w-screen h-full">
           <div className="flex justify-around flex-row h-full">
             <div className="flex flex-col w-2/5 h-full space-y-6">
