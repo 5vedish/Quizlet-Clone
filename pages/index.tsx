@@ -50,7 +50,7 @@ import NavbarContainer from '../components/navbar'
 export default function Home() {
   return (
     <div>
-      <NavbarContainer bg_enabled logged_in>
+      <NavbarContainer bg_enabled logged_in={false}>
         <div className="mx-auto w-screen h-full">
           <div className="flex justify-around flex-row h-full">
             <div className="flex flex-col w-2/5 h-full space-y-6">

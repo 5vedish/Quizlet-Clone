@@ -41,3 +41,23 @@ export default function NavbarContainer({
     </div>
   )
 }
+
+// /* Name */
+
+// position: absolute;
+// width: 128px;
+// height: 96px;
+// left: -24px;
+// top: -8px;
+
+// font-family: Neuton;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 22px;
+// line-height: 150%;
+// /* or 33px */
+// display: flex;
+// align-items: center;
+// text-align: center;
+
+// color: #000000;
