@@ -10,7 +10,7 @@ export default function LogInCard() {
   let completeButtonRef = useRef(null)
   return (
     <>
-      <span className="md:w-auto mt-10 items-center text-8xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-t from-purple-700 to-blue-400 filter drop-shadow-md">
+      <span className="md:w-auto mt-10 items-center text-8xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-t from-purple-700 to-blue-400 filter drop-shadow-md select-none">
         Login
       </span>
 
@@ -76,7 +76,7 @@ export default function LogInCard() {
             enter="transform ease-out duration-200 origin-top"
             enterFrom="transform opacity-100 scale-125 -translate-y-full"
             enterTo="transform opacity-100 scale-100 translate-y-0.5"
-            leave="transform ease-in duration-100 -translate-y-full transition delay-200"
+            leave="transform ease-in duration-100 -translate-y-full transition delay-100"
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-0"
           >

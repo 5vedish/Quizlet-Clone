@@ -23,8 +23,10 @@ export default function NavbarContainer({
     >
       <nav className="flex flex-row w-screen h-20 bg-indigo-600 justify-between shadow-md">
         <Link href="/">
-          <div className="flex w-16 h-16 border-4 rounded border-white mt-2 ml-6 justify-center items-center cursor-pointer">
-            <p className="text-white font-bold font-trial">Testlet</p>
+          <div className="flex w-16 h-16 border-4 rounded border-white mt-2 ml-6 justify-center items-center shadow-inner cursor-pointer">
+            <p className="text-white font-bold font-trial select-none">
+              Testlet
+            </p>
           </div>
         </Link>
 
@@ -35,7 +37,7 @@ export default function NavbarContainer({
                 Login
               </button>
             </Link>
-            <div className="mx-4 text-white font-bold">|</div>
+            <div className="mx-4 text-white font-bold select-none">|</div>
             <Link href="/signup">
               <button className="flex mr-6 w-10 h-4 text-white justify-start">
                 Signup
