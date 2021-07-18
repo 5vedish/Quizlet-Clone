@@ -10,8 +10,11 @@ export default function LogInCard() {
   let completeButtonRef = useRef(null)
   return (
     <>
+      <span className="md:w-auto mt-10 items-center text-8xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-b from-indigo-600 to-blue-500">
+        Login
+      </span>
       <div
-        className="flex flex-col bg-white w-80 h-68 m-auto bg-opacity-30 border-black border border-opacity-20 rounded-xl
+        className="flex flex-col bg-white w-80 h-68 m-20 bg-opacity-30 border-black border border-opacity-20 rounded-xl
         text-blue-500 font-semibold"
       >
         <label className="mx-6 mt-5 font-semibold">
