@@ -76,7 +76,7 @@ export default function LogInCard() {
             enter="transform ease-out duration-200 origin-top"
             enterFrom="transform opacity-100 scale-125 -translate-y-full"
             enterTo="transform opacity-100 scale-100 translate-y-0.5"
-            leave="transform ease-in duration-100 -translate-y-full"
+            leave="transform ease-in duration-100 -translate-y-full transition delay-200"
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-0"
           >
@@ -97,7 +97,7 @@ export default function LogInCard() {
               <button
                 onClick={() => setIsOpen(false)}
                 className="font-semibold text-align-center w-20 h-10 text-white 
-                    rounded-lg bg-gradient-to-t ffrom-purple-700 to-blue-400 
+                    rounded-lg bg-gradient-to-t from-purple-700 to-blue-400 
                     hover:from-purple-400 hover:via-indigo-400 hover:to-blue-300 mt-4 ml-4 mb-4
                     focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-70
                     cursor-pointer"
