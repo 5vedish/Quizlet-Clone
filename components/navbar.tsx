@@ -1,5 +1,4 @@
 import 'tailwindcss/tailwind.css'
-import { Menu } from '@headlessui/react'
 import Link from 'next/link'
 
 export default function NavbarContainer({
