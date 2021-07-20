@@ -13,17 +13,17 @@ export default function FlashCard() {
         as={Fragment}
         show={isFront}
         enter="transform duration-200 ease-out transition delay-200"
-        enterFrom="opacity-0 -rotate-180 scale-50"
-        enterTo="opacity-100 -rotate-1 scale-100"
-        leave="transform transition duration-200"
-        leaveFrom="opacity-100 rotate-0 scale-100"
-        leaveTo="opacity-0 rotate-180 scale-50"
+        enterFrom="opacity-100 scale-y-0"
+        enterTo="opacity-100 scale-y-100"
+        leave="transform transition duration 200"
+        leaveFrom="opacity-100 scale-y-100"
+        leaveTo="opacity-100 scale-y-0"
       >
         <button
           onClick={() => setIsFront((isFront) => !isFront)}
-          className="flex-inital mt-20 bg-white w-72 h-72 rounded-md shadow-md focus:outline-none"
+          className="flex-inital mt-52 fixed bg-white w-1/4 h-1/2 rounded-md shadow-lg focus:outline-none p-2"
         >
-          Front
+          <p>What is a Jeffery?</p>
         </button>
       </Transition>
 
@@ -32,17 +32,17 @@ export default function FlashCard() {
         as={Fragment}
         show={!isFront}
         enter="transform duration-200 ease-out transition delay-200"
-        enterFrom="opacity-0 -rotate-180 scale-50"
-        enterTo="opacity-100 -rotate-1 scale-100"
+        enterFrom="opacity-100 scale-y-0"
+        enterTo="opacity-100 scale-y-100"
         leave="transform transition duration-200"
-        leaveFrom="opacity-100 rotate-0 scale-100"
-        leaveTo="opacity-0 rotate-180 scale-50"
+        leaveFrom="opacity-100 scale-y-100"
+        leaveTo="opacity-100 scale-y-0"
       >
         <button
           onClick={() => setIsFront((isFront) => !isFront)}
-          className="flex-inital mt-20 bg-white w-72 h-72 rounded-md shadow-md focus:outline-none"
+          className="flex-inital mt-52 fixed bg-white w-1/4 h-1/2 rounded-md shadow-lg focus:outline-none"
         >
-          Back
+          Jeffery is a Jefferarri.
         </button>
       </Transition>
 
