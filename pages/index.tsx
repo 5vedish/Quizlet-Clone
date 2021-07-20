@@ -1,6 +1,7 @@
 import { getSortedPostsData } from '../lib/posts'
 import { GetStaticProps } from 'next'
 import NavbarContainer from '../components/navbar'
+import Link from 'next/link'
 
 // export default function Home({
 //   allPostsData
@@ -76,12 +77,11 @@ export default function Home() {
               </div>
 
               <div className="flex flex-row justify-end h-1/4 my-12">
-                <button
-                  className="transform bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 w-11/12 h-32 text-white text-5xl font-semibold rounded-l-lg hover:bg-indigo-600 transition duration-500 hover:scale-110 hover:-translate-x-14"
-                  onClick={() => alert('Nothing Happened')}
-                >
-                  Click Here to Get Started!
-                </button>
+                <Link href="/signup">
+                  <button className="transform bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 w-11/12 h-32 text-white text-5xl font-semibold rounded-l-lg hover:bg-indigo-600 transition duration-500 hover:scale-110 hover:-translate-x-14">
+                    Click Here to Get Started!
+                  </button>
+                </Link>
               </div>
               <div className="h-1/4 my-8">
                 <p className="text-5xl text-center">
