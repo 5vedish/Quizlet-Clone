@@ -25,5 +25,13 @@ model User {
   email   String   @unique
   name    String
   question_bank   Question[]
+  flash_cards FlashCard[]
 }
 
+model FlashCard{
+  id     Int     @default(autoincrement()) @id
+  user   User    @relation(fields: [userId], references: [id])
+  userId Int     
+  front String
+  back String
+}
