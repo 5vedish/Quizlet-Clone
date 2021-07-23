@@ -1,8 +1,8 @@
 import { prisma } from './prisma'
 
-export async function getQuestions() {
+export async function getFlashCards() {
   return prisma.user.findUnique({
     where: { email: 'jiff@jiff.com' },
-    include: { question_bank: true },
+    include: { flash_cards: true},
   })
 }

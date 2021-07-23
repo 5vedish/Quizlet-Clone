@@ -3,7 +3,14 @@ import { Fragment, useState } from 'react'
 import { Transition } from '@headlessui/react'
 import { SSL_OP_EPHEMERAL_RSA } from 'constants'
 
-export default function FlashCard() {
+export default function FlashCard({
+  flash_card,
+}: {
+  flash_card: {
+    front: String
+    back: String
+  }
+}) {
   let [isFront, setIsFront] = useState(true)
 
   return (
@@ -23,7 +30,7 @@ export default function FlashCard() {
           onClick={() => setIsFront((isFront) => !isFront)}
           className="flex-inital mt-52 fixed bg-white w-1/4 h-1/2 rounded-md shadow-lg focus:outline-none p-2"
         >
-          <p>What is a Jeffery?</p>
+          <p>{flash_card.front}</p>
         </button>
       </Transition>
 
@@ -42,7 +49,7 @@ export default function FlashCard() {
           onClick={() => setIsFront((isFront) => !isFront)}
           className="flex-inital mt-52 fixed bg-white w-1/4 h-1/2 rounded-md shadow-lg focus:outline-none"
         >
-          Jeffery is a Jefferarri.
+          {flash_card.back}
         </button>
       </Transition>
 
