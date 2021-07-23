@@ -10,36 +10,39 @@ export default function FlashCard() {
       <Transition
         as={Fragment}
         show={isFront}
-        enter="transform transition duration-[400ms]"
-        enterFrom="opacity-0 rotate-[-120deg] scale-50"
-        enterTo="opacity-100 rotate-0 scale-100"
-        leave="transform duration-200 transition ease-in-out"
-        leaveFrom="opacity-100 rotate-0 scale-100 "
-        leaveTo="opacity-0 scale-95"
+        enter="transform ease-out duration-300 origin-top"
+        enterFrom="transform opacity-100 scale-100"
+        enterTo="transform opacity-100 scale-100"
+        leave="transform ease-in duration-300 transition delay-100"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-0"
       >
-        <div className="flex-inital mt-52 bg-white w-96 h-96 rounded-md shadow-md">
-          Front
-        </div>
+        <button 
+            onClick={() => setIsFront((isFront) => !isFront)}
+            className="flex-inital mt-40 bg-white w-96 h-72 fixed rounded-md shadow-md">
+          Q: Who is a butt?
+        </button>
       </Transition>
 
       {/*Back Card*/}
       <Transition
         as={Fragment}
         show={!isFront}
-        enter="transform transition duration-[400ms]"
-        enterFrom="opacity-0 rotate-[-120deg] scale-50"
-        enterTo="opacity-100 rotate-0 scale-100"
-        leave="transform duration-200 transition ease-in-out"
-        leaveFrom="opacity-100 rotate-0 scale-100 "
-        leaveTo="opacity-0 scale-95"
+        enter="transform ease-out duration-300 origin-bottom"
+        enterFrom="transform opacity-100 scale-100"
+        enterTo="transform opacity-100 scale-100"
+        leave="transform ease-in duration-300 transition delay-100"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-0"
       >
-        <div className="flex-inital mt-52 bg-white w-96 h-96 rounded-md shadow-md">
-          Back
-        </div>
+        <button 
+            onClick={() => setIsFront((isFront) => !isFront)}
+            className="flex-inital mt-40 bg-white w-96 h-72 fixed rounded-md shadow-md">
+          A: Zhi is a butt.
+        </button>
       </Transition>
-
       {/*Flip Button*/}
-      <button
+      {/* <button
         onClick={() => setIsFront((isFront) => !isFront)}
         className="font-semibold text-align-center w-20 h-10 text-white 
                     rounded-lg bg-gradient-to-t from-purple-700 to-blue-400
@@ -48,7 +51,7 @@ export default function FlashCard() {
                     cursor-pointer"
       >
         Flip
-      </button>
+      </button> */}
     </>
   )
 }
