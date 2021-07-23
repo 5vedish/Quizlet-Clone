@@ -18,7 +18,7 @@ export default function NavbarContainer({
 
   return (
     <div
-      className={`flex flex-col w-screen h-screen justify-start items-center ${background}`}
+      className={`flex flex-col w-screen h-screen justify-start items-center overflow-none ${background}`}
     >
       <nav className="flex flex-row w-screen h-20 bg-indigo-600 justify-between shadow-md">
         <Link href="/">
