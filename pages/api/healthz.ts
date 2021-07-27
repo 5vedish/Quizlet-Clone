@@ -1,23 +1,23 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { prisma } from '@lib/prisma'
 
-// Example Query
-// export default async (_: NextApiRequest, res: NextApiResponse) => {
-//   res.status(200).json({
-//     prisma: await prisma.user.findUnique({
-//       where: { email: 'z.io' },
-//       include: { question_bank: true },
-//     }),
-//   })
-// }
+// // Example Query
+export default async (_: NextApiRequest, res: NextApiResponse) => {
+  res.status(200).json({
+    prisma: await prisma.user.findUnique({
+      where: { id: 1 },
+      include: { flash_cards: true },
+    }),
+  })
+}
 
 // Create
 // export default async (_: NextApiRequest, res: NextApiResponse) => {
 //   res.status(200).json({
 //     prisma: await prisma.user.create({
 //       data: {
-//         email: 'jiff@jiff.com',
-//         name: 'jiff',
+//         email: 'penis@gmail.com',
+//         name: 'kyle',
 //         question_bank: {
 //           create: [],
 //         },
@@ -47,23 +47,23 @@ import { prisma } from '@lib/prisma'
 //   res.status(200).json({hello:'yes'})
 // }
 
-export default async (_: NextApiRequest, res: NextApiResponse) => {
-  await await prisma.user.update({
-    where: {
-      id: 1,
-    },
-    data: {
-      flash_cards: {
-        create: {
-          front: "Is Zhi gay?",
-          back: "Yes 100% for nadil"
-        },
-      },
-    },
-  })
+// export default async (_: NextApiRequest, res: NextApiResponse) => {
+//   await await prisma.user.update({
+//     where: {
+//       id: 1,
+//     },
+//     data: {
+//       flash_cards: {
+//         create: {
+//           front: 'Is Zhi gay?',
+//           back: 'Yes 100% for nadil',
+//         },
+//       },
+//     },
+//   })
 
-  res.status(200).json({hello:'yes'})
-}
+//   res.status(200).json({ hello: 'yes' })
+// }
 
 // export default async (_: NextApiRequest, res: NextApiResponse) => {
 //   res.status(200).json({
