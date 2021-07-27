@@ -73,7 +73,7 @@ export default function LogInCard() {
           </Transition.Child>
           <Transition.Child
             as={Fragment}
-            enter="transform ease-out duration-200 origin-top"
+            enter="transform ease-in-out duration-200 origin-top"
             enterFrom="transform opacity-100 scale-150 -translate-y-full"
             enterTo="transform opacity-100 scale-100 translate-y-0.5"
             leave="transform ease-in duration-100 -translate-y-full transition delay-100"
