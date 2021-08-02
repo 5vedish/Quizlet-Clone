@@ -15,7 +15,7 @@ export default function LogInCard() {
       </span>
 
       <div
-        className="flex flex-col bg-white w-80 h-68 m-20 bg-opacity-30 rounded-xl
+        className="flex flex-col bg-white w-80 h-68 m-20 bg-opacity-60 rounded-xl
         text-blue-500 font-semibold shadow-md"
       >
         <label className="mx-6 mt-5 font-semibold">

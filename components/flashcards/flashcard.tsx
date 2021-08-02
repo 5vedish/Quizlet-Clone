@@ -28,7 +28,7 @@ export default function FlashCard({
       >
         <button
           onClick={() => setIsFront((isFront) => !isFront)}
-          className="flex-inital fixed bg-white w-full h-full rounded-md shadow-lg focus:outline-none p-2"
+          className="flex-inital fixed bg-white w-full h-full rounded-lg shadow-lg focus:outline-none p-2"
         >
           {flash_card.front}
         </button>
@@ -47,7 +47,7 @@ export default function FlashCard({
       >
         <button
           onClick={() => setIsFront((isFront) => !isFront)}
-          className="flex-inital fixed bg-white w-full h-full rounded-md shadow-lg focus:outline-none p-2"
+          className="flex-inital fixed bg-white w-full h-full rounded-lg shadow-lg focus:outline-none p-2"
         >
           {flash_card.back}
         </button>

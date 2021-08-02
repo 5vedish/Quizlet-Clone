@@ -7,10 +7,7 @@ export default function SignupCard() {
         Signup
       </span>
 
-      <div
-        className="flex flex-wrap text-blue-500 w-96 h-80 m-10 bg-white bg-opacity-30 rounded-xl
-        text-blue-500 font-semibold shadow-md"
-      >
+      <div className="flex flex-wrap text-blue-500 w-96 h-80 m-10 bg-white bg-opacity-60 rounded-xl font-semibold shadow-md">
         <label className="mx-6 mt-5 w-32 font-semibold">
           Username
           <form className="flex mt-1">
@@ -37,7 +34,6 @@ export default function SignupCard() {
             <input
               className="bg-white border-2 text-black placeholder-gray-400 focus:placeholder-gray-300 focus:outline-none focus:ring focus:border-indigo-200 border-gray h-10 rounded-md flex-1 px-2"
               placeholder="Enter Password"
-
             ></input>
           </form>
         </label>

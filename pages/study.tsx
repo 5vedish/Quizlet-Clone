@@ -17,18 +17,18 @@ export default function Study({
       <NavbarContainer bg_enabled={true} logged_in={true} authing={false}>
         <></>
       </NavbarContainer>
-      <div className="w-screen h-screen flex flex-row flex-nowrap flex-inital flex-grow flex-shrink justify-between items-center">
-        <div className="w-96 h-96 transform origin-center scale-75">
-          <FlashCard flash_card={flash_cards[0]}></FlashCard>
+      <div className="bg-green-400 rounded-full w-screen h-screen flex flex-row flex-nowrap flex-inital flex-grow flex-shrink justify-between items-center">
+        <div className="w-96 h-full max-h-96 transform origin-center scale-75">
+          <FlashCard flash_card={flash_cards[0]} />
         </div>
-        <div className="w-96 h-96 transform origin-center scale-110">
-          <FlashCard flash_card={flash_cards[0]}></FlashCard>
+        <div className="w-96 h-full max-h-96 transform origin-center scale-125">
+          <FlashCard flash_card={flash_cards[0]} />
         </div>
-        <div className="w-96 h-96 transform origin-center scale-75">
-          <FlashCard flash_card={flash_cards[0]}></FlashCard>
+        <div className="w-96 h-full bg-green-400 max-h-96 transform origin-center scale-75">
+          <FlashCard flash_card={flash_cards[0]} />
         </div>
       </div>
-      <FlashCardNav></FlashCardNav>
+      <FlashCardNav />
     </>
   )
 }
