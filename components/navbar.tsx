@@ -13,7 +13,7 @@ export default function NavbarContainer({
   authing: boolean
 }) {
   const background = bg_enabled
-    ? ' bg-gradient-to-br from-purple-300 via-pink-200 to-blue-400'
+    ? ' bg-purple-200'
     : ''
 
   return (

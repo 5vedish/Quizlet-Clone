@@ -1,14 +1,14 @@
 import NavbarContainer from '@components/navbar'
-import createFlashcard from '@components/flashcards/createFlashcard'
+import CreateFlashcard from '@components/flashcards/createFlashcard'
 
 export default function create() {
   return (
     <>
       <NavbarContainer bg_enabled={true} logged_in={true} authing={false}>
-        <div className="w-screen h-72 bg-white shadow-md flex flex-none">
+        <div className="w-full h-72 bg-white shadow-md flex flex-none">
           {/*Create a new study set and button header*/}
-          <div className="mx-40 mt-10 w-full inline">
-            <div className="text-xl font-black text-left text-gray-700 flex items-center justify-between sticky ">
+          <div className="mx-40 mt-10 w-5/6 inline">
+            <div className="text-xl font-black text-left text-gray-700 flex items-center justify-between sticky">
               Create a new study set
               <button
                 className="font-semibold text-base text-align-center w-20 h-10 text-white rounded-lg
@@ -39,6 +39,11 @@ export default function create() {
             </div>
           </div>
         </div>
+        <div className="mt-10 w-5/6 flex flex-col gap-y-10">
+            <CreateFlashcard />
+            <CreateFlashcard />
+        </div>
+       
       </NavbarContainer>
     </>
   )
