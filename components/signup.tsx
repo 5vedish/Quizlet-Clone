@@ -50,8 +50,7 @@ export default function SignupCard() {
 
         <button
           className="font-semibold text-align-center w-20 h-10 text-white 
-                    rounded-lg bg-gradient-to-t from-purple-700 to-blue-400
-                    hover:from-purple-400 hover:via-indigo-400 hover:to-blue-300 mt-2 ml-6 mb-4
+                    rounded-lg bg-purple-500 active:bg-purple-600  mt-2 ml-6 mb-4
                     focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-70
                     cursor-pointer"
         >
