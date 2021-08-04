@@ -11,14 +11,14 @@ export default function CreateFlashcard() {
         </button>
       </div>
       <div className="block bg-gray-200 h-1" />
-      <div className="p-5 px-10 w-full flex flex-row justify-between gap-x-32">
+      <div className="p-5 px-10 w-full flex flex-row justify-between gap-x-8">
         <label className="text-gray-800 flex-grow">
           Term
           <form>
             <input
               type="text"
               className="px-3 text-gray-800 placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 flex-1 
-              focus:outline-none cursor-auto break-words whitespace-normal"
+              focus:outline-none cursor-auto break-words whitespace-normal w-full"
             ></input>
             <div className="block bg-purple-300 h-1" />
           </form>
@@ -29,7 +29,7 @@ export default function CreateFlashcard() {
             <input
               type="text"
               className="px-3 text-gray-800 placeholder-gray-400 focus:placeholder-gray-300 border-gray h-10 flex-1 
-              focus:outline-none cursor-auto break-words whitespace-normal"
+              focus:outline-none cursor-auto break-words whitespace-normal w-full"
             ></input>
             <div className="block bg-purple-300 h-1" />
           </form>
