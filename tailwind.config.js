@@ -12,6 +12,7 @@ module.exports = {
     extend: {
         backgroundColor: ['active'],
         textColor: ['active'],
+        borderRadius: ['active'],
     }
   },
   plugins: [require('@tailwindcss/custom-forms')],

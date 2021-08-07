@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react'
 import { Transition } from '@headlessui/react'
 import { SSL_OP_EPHEMERAL_RSA } from 'constants'
 
-export default function FlashCard({
+export default function Flashcard({
   flash_card,
 }: {
   flash_card: {

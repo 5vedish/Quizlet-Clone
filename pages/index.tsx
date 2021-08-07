@@ -59,7 +59,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col flex justify-end bg-white bg-opacity-50 w-3/5 h-full rounded-l-3xl">
+            <div className="flex flex-col justify-end bg-white bg-opacity-50 w-3/5 h-full rounded-l-3xl">
               <div className="flex flex-row justify-end h-auto my-12">
                 <div className="transform bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 w-11/12 rounded-l-lg hover:transition duration-500 hover:scale-110 hover:-translate-x-14">
                   <p className="font-semibold px-4 py-4 text-xl text-white">

@@ -20,7 +20,7 @@ export default function NavbarContainer({
     <div
       className={`flex flex-col w-screen h-screen justify-start fixed top-0 items-center ${background}`}
     >
-      <nav className="flex flex-row w-screen h-20 bg-indigo-600 justify-between shadow-md">
+      <nav className="flex flex-row w-screen h-20 bg-indigo-600 justify-between shadow-md fixed">
         <Link href="/">
           <div className="flex w-16 h-16 border-4 rounded border-white mt-2 ml-6 justify-center items-center cursor-pointer">
             <p className="text-white font-bold font-trial select-none">
