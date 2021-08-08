@@ -10,7 +10,7 @@ export default function LogInCard() {
   let completeButtonRef = useRef(null)
   return (
     <>
-      <span className="md:w-auto mt-10 items-center text-8xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-t from-purple-700 to-blue-400 filter drop-shadow-md select-none">
+      <span className="md:w-auto mt-32 items-center text-8xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-t from-purple-700 to-blue-400 filter drop-shadow-md select-none">
         Login
       </span>
 
