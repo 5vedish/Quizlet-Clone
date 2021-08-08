@@ -4,6 +4,7 @@ import Choice from './choice'
 export default function QuestionBox({
   question,
   index,
+  recordChoice,
 }: {
   question: {
     type: String
@@ -12,11 +13,16 @@ export default function QuestionBox({
     answer: String
   }
   index: number
+  recordChoice: (index: number, choice: String) => void
 }) {
   const [selected, setSelected] = useState(-1)
 
   const selectChoice = async (num: number) => {
     setSelected(num)
+
+    const choice = String.fromCharCode(num + 96)
+
+    recordChoice(index, choice)
   }
 
   return (
