@@ -6,7 +6,7 @@ export default async (_: NextApiRequest, res: NextApiResponse) => {
   res.status(200).json({
     prisma: await prisma.user.findUnique({
       where: { id: 1 },
-      include: { flash_cards: true },
+      include: { flash_cards: true, question_bank: true },
     }),
   })
 }

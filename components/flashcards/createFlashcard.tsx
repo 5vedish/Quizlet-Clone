@@ -1,11 +1,18 @@
 import 'tailwindcss/tailwind.css'
 
-export default function CreateFlashcard() {
+export default function CreateFlashcard({
+  index,
+  removeIndex,
+}: {
+  index: number
+  removeIndex: (index: number) => void
+}) {
   return (
     <div className="w-full h-40 bg-white rounded-lg shadow-lg">
       <div className="text-lg text-gray-600 font-black flex justify-between p-3 px-5">
-        1
-        <button className="focus:outline-none text-white bg-red-600 rounded-full active:text-red-600 active:bg-white">
+        {index + 1}
+        <button className="focus:outline-none text-white bg-red-600 rounded-full active:text-red-600 active:bg-white"
+        onClick={() => removeIndex(index)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-7"
