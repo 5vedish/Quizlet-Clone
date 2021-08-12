@@ -73,7 +73,7 @@ export default function create() {
               </div>
             </div>
             {/*Add flashcards*/}
-            <div className="mt-10 w-5/6 grid grid-cols-1 gap-10 auto-rows-max xl:grid-cols-2 ">
+            <div className="py-6 my-4 mb-24 w-5/6 grid grid-cols-1 gap-10 auto-rows-max xl:grid-cols-2 ">
               {flashcards}
               <div>
                 <button
