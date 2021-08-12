@@ -1,17 +1,18 @@
 import NavbarContainer from '@components/navbar'
 import CreateFlashcard from '@components/flashcards/createFlashcard'
-import { prisma } from '@lib/prisma'
 import { useState } from 'react'
 
 //flashcards.push(<CreateFlashcard index={flashcards.length} removeIndex={removeIndex}></CreateFlashcard>)
 export default function create() {
   const [flashcards, setFlashcards] = useState<any>([])
+
   const removeIndex = (index: number) => {
     let newFlashcards = flashcards.map((flashcard: any) => flashcard)
     newFlashcards.splice(index, 1)
     setFlashcards(newFlashcards)
     console.log(flashcards)
   }
+
   const addCard = () => {
     let newFlashcards = flashcards.map((flashcard: any) => flashcard)
     newFlashcards.push(<CreateFlashcard index={flashcards.length} removeIndex={removeIndex}></CreateFlashcard>)
@@ -53,10 +54,10 @@ export default function create() {
             </div>
           </div>
         </div>
-        <div className="px-4 my-10 w-5/6 h-screen flex flex-col gap-y-10 xl:grid xl:grid-cols-2 xl:auto-rows-max xl:gap-x-10 overflow-y-scroll overscroll-contain">
+        <div className="px-4 my-10 w-5/6 h-screen flex flex-col gap-y-10 2xl:w-full 2xl:mx-40 2xl:grid 2xl:grid-cols-2 2xl:auto-rows-max 2xl:gap-x-10 overflow-y-scroll overscroll-contain">
           {flashcards}
 
-          <button className="w-full h-40 bg-white rounded-lg shadow-lg flex justify-center items-center font-black text-xl text-purple-500 
+          <button className="w-full h-40 bg-white rounded-lg shadow-lg flex-none justify-center items-center font-black text-xl text-purple-500 
           focus:outline-none active:bg-gray-50 active:text-purple-600"
           onClick={() => addCard()}>
             Add card +
