@@ -38,7 +38,7 @@ export default function create() {
       <NavbarContainer bg_enabled={true} logged_in={true} authing={false}>
         <div className="mt-20 w-screen h-full flex flex-col justify-start items-center">
           {/*Fixed 'Create a new study set' and 'Create' button header*/}
-          <div className="w-screen h-16 bg-white shadow-2xl flex justify-center">
+          <div className="w-screen h-16 bg-white shadow-sm flex justify-center fixed">
             <div className="w-5/6 flex flex-row justify-between items-center text-xl font-black text-left text-gray-700">
               <div>Create a new study set</div>
               <button
@@ -49,10 +49,10 @@ export default function create() {
               </button>
             </div>
           </div>
-          <div className="overflow-auto w-screen h-5/6 flex flex-col justify-start items-center">
+          <div className="overflow-auto w-screen flex flex-col justify-start items-center mt-16">
             {/*Flashcard set title and description*/}
-            <div className="w-full h-60 bg-white flex flex-none justify-center">
-              <div className="mt-10 w-5/6 inline">
+            <div className="w-full h-48 bg-white flex flex-none justify-center">
+              <div className="w-5/6 inline">
                 <div>
                   <form className="flex mt-5">
                     <input
